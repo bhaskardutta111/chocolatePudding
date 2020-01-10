@@ -1,0 +1,707 @@
+/*
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* RESET CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+/* HELPER CLASSES BEGIN */
+
+.alignLeft {
+    float: left;
+}
+
+.alignRight {
+    float: right;
+}
+
+.margin-Bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-Bottom-10 {
+    margin-bottom: 20px;
+}
+
+.margin-Bottom-30 {
+    margin-bottom: 30px;
+}
+
+.margin-bottom-40 {
+    margin-bottom: 40px;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+p,
+ul li,
+ol li {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 20px;
+}
+
+/* HELPER CLASSES END */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/*HEAD SECTION RULES*/
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#first-block {
+    background-image:
+        -webkit-gradient(linear, left top, left bottom, from(rgba(218, 51, 46, 0.6)), to(rgba(218, 51, 46, 0.6))),
+        url('../images/firstBlock-bg.png');
+    background-image:
+        linear-gradient(rgba(218, 51, 46, 0.6), rgba(218, 51, 46, 0.6)),
+        url('../images/firstBlock-bg.png');
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#first-block h2 {
+    color: white;
+
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    padding: 40px 20px;
+}
+
+
+h2 {
+    font-size: 52px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.nav-list li {
+    display: inline;
+
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    border-bottom: 4px solid #fff transparent;
+    padding-bottom: 3px;
+    -webkit-transition: border-bottom 0.1s, solor 0.1s;
+    transition: border-bottom 0.1s, solor 0.1s
+}
+
+.nav-list li a:hover {
+    border-bottom: 4px solid #fff;
+    -webkit-transition: border-bottom 0.1s, solor 0.1s;
+    transition: border-bottom 0.1s, solor 0.1s
+}
+
+.heading-wrapper {
+    display: inline-block;
+    margin-top: 90px;
+    position: relative;
+}
+
+.app-phoneshot {
+    float: right;
+    position: absolute;
+    right: -135px;
+
+}
+
+.phoneshot-img {
+    width: 85%;
+    position: relative;
+    margin-bottom: -240px;
+}
+
+/*IPHONE ANIMATION RULES*/
+
+
+.phone-case {
+    position: relative;
+    right: 50px
+}
+
+.iphone-on {
+    position: absolute;
+    right: 154px;
+    top: 124px;
+    width: 65%;
+
+
+}
+
+.iphone-btn {
+    /*border: 5px solid red;*/
+    position: absolute;
+    right: 215px;
+
+
+}
+
+
+.js-op {
+    opacity: 0;
+}
+
+.js-op.animated {
+    opacity: 1;
+
+}
+
+.when-clicked {
+    opacity: 0;
+    -webkit-animation-delay: 3.2s;
+    animation-delay: 3.2s;
+
+}
+
+.when-clicked.animated {
+    opacity: 1;
+
+}
+
+/*PHONE ANIMATION DONE*/
+
+
+.app-info {
+    width: 60%;
+    padding-right: 150px;
+    float: left;
+
+}
+
+.info-para {
+    font-size: 36px;
+    line-height: 40px;
+    font-family: Comic Sans MS;
+    color: white;
+    margin-bottom: 55px;
+}
+
+.app-link {
+    padding: 23px 35px;
+    background: #282828;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.app-link:hover {
+    background: #383737;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.phone-icon {
+    vertical-align: middle;
+    padding-right: 20px;
+}
+
+
+
+/*APP FEATURES SECTION*/
+
+#app-features-block .container {
+    text-align: center;
+    padding: 60px 20px;
+    width: 100%;
+}
+
+.app-features-label {
+    color: #8a8a8a;
+
+}
+
+.app-features {
+    font-family: Comic Sans MS;
+    font-size: 22px;
+    line-height: 28px;
+    padding: 0 130px;
+}
+
+.col-4-app {
+    width: 33.33%;
+    float: left;
+    padding: ;: 0 45px;
+}
+
+.col-4-app p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #646464;
+}
+
+.row {
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.col-4-app h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+
+/*CHOCOLATE PUDDING RULES*/
+
+#choco {
+    background: url(../images/faceBG.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#choco .download-content {
+    width: 50%;
+    padding: 200px 0;
+}
+
+/*style for animation
+.for-sliding {
+    opacity: 0;
+
+}
+
+.for-sliding animated {
+    opacity: 1;
+
+}
+*/
+#choco h2 {
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.download-info {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: Comic Sans MS;
+    padding-bottom: 30px;
+
+}
+
+.download-link {
+    padding: 15px;
+    background: #d9332d;
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.download-link:hover {
+    background: #c33934;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+
+}
+
+.red {
+    color: #f55150;
+}
+
+
+
+/*  FOOT  MENU RULES */
+#foot-menu {
+    background: #2e2e38;
+}
+
+#foot-menu .container {
+    padding: 120px 20px;
+
+}
+
+#foot-menu h4 {
+    font-size: 20px;
+    margin:
+}
+
+#foot-menu li {
+    font-family: Comic Sans MS;
+
+}
+
+.posts-foot li {
+    font-size: 15px;
+    line-height: 20px;
+    margin: 5px;
+    padding-left: 70px;
+}
+
+.blocks-foot {
+    width: 33.33%;
+    float: left;
+    margin-top: 77px;
+    color: #fff;
+    padding: 30px;
+}
+
+.block {
+    display: block;
+}
+
+.tweets-foot,
+.posts-foot {
+    margin-top: 25px;
+    font-family: Comic Sans MS;
+
+}
+
+.redBG {
+    background: url(../images/footerBlock1.png) no-repeat;
+}
+
+.tweets-foot {
+    margin-bottom: 25px;
+
+}
+
+.tweets-foot li {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.small {
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.about {
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 25px;
+
+}
+
+
+
+/*FOOTER RULES*/
+
+#copyright {
+    background: #d7dedc;
+
+}
+
+#copyright .container {
+    padding: 40px;
+    text-align: center;
+}
+
+.inline {
+    display: inline;
+    font-size: 20px;
+    vertical-align: middle;
+
+}
+
+.cr,
+.me {
+    margin-right: 40px;
+
+}
+
+.fb {
+    margin-right: 40px;
+
+}
+
+.cr:after,
+.me:after {
+    content: "";
+    border: 1px solid #555555;
+    margin-left: 30px;
+
+}
+
+
+/*MEDIA QUEIES*/
+
+@media only screen and (max-width: 1240px) {
+
+    .app-info {
+        padding-right: 40px;
+
+    }
+
+    .download-content {
+        width: 70%;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    .iphone-on,
+    .iphone-btn,
+    .phone-case {
+        display: none;
+    }
+
+    .app-info {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .app-features {
+        padding: 0 0;
+    }
+
+    .col-4-app {
+        width: 100%;
+        float: none;
+        margin-bottom: 50px;
+
+    }
+
+    .row h3 {
+        margin: 15px 0;
+    }
+
+    .fb,
+    .tw,
+    .dr {
+        margin-top: 20px;
+
+    }
+
+    .nav-wrapper {
+        overflow: hidden;
+        position: absolute;
+        right: 30px;
+        top: 50px;
+        display: block;
+        z-index: 1000;
+
+    }
+
+    .burger-nav {
+        background: url(../images/hamburger.png) no-repeat 100% center;
+        display: block;
+        height: 33px;
+        width: 40px;
+        cursor: pointer;
+        float: right;
+        margin-bottom: 10px;
+
+    }
+
+    .container nav ul {
+        height: 0;
+        overflow: hidden;
+        background: #282828;
+        border-radius: 5px;
+    }
+
+    .container nav ul.open {
+        height: auto;
+        clear: both;
+
+    }
+
+    .container nav ul li {
+        float: none;
+        text-align: right;
+        width: auto;
+        margin: 0;
+        display: block;
+    }
+
+    .container nav ul li a {
+        color: #fff;
+        padding: 10px;
+        display: block;
+        margin: 0;
+    }
+
+    .container nav ul li a:hover {
+        border: none;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .blocks-foot {
+        width: 100%;
+        float: none;
+        margin-top: 0;
+        font-weight: 400;
+
+    }
+
+    .logo-foot {
+        margin-bottom: 35px;
+
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+
+    .cr:after,
+    .me:after {
+        display: none;
+    }
+
+}
